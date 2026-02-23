@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)https://localhost:7267/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xola Mgangxela - Portfolio - CV Portfolio</title>
+    
+    <link rel="stylesheet" href="./Xola Mgangxela - Portfolio - CV Portfolio_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./Xola Mgangxela - Portfolio - CV Portfolio_files/site.css">
+    <link rel="stylesheet" href="./Xola Mgangxela - Portfolio - CV Portfolio_files/style.css">
+    <link rel="stylesheet" href="./Xola Mgangxela - Portfolio - CV Portfolio_files/ICETASK1_ST10439697_PROG7311.styles.css">
+    <link href="./Xola Mgangxela - Portfolio - CV Portfolio_files/css2" rel="stylesheet">
+
+    <style>
+        :root {
+            --blue: #1a47d6;
+            --blue-dk: #1238b0;
+            --black: #0d0d0d;
+            --white: #ffffff;
+            --off: #f4f4f4;
+            --border: #d0d8f0;
+            --muted: #555e7a;
+            --accent: #1a47d6;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            min-height: 100%;
+            background: var(--off);
+            color: var(--black);
+            font-family: 'Barlow', sans-serif;
+            font-size: 15px;
+        }
+
+        /* ── NAVBAR ── */
+        .navbar {
+            background: var(--black) !important;
+            border-bottom: 4px solid var(--blue) !important;
+            padding: 0.6rem 0;
+        }
+
+        .navbar-brand {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 900;
+            font-size: 1.4rem;
+            color: var(--white) !important;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+            .navbar-brand span {
+                color: var(--blue);
+            }
+
+        .nav-link {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.65) !important;
+            padding: 0.5rem 1rem !important;
+            transition: color 0.2s;
+        }
+
+            .nav-link:hover, .nav-link.active {
+                color: var(--blue) !important;
+            }
+
+        /* ── MAIN ── */
+        .main-content {
+            min-height: calc(100vh - 120px);
+            padding: 2.5rem 0 4rem;
+        }
+
+        /* ── CARDS ── */
+        .card {
+            background: var(--white) !important;
+            border: 1px solid var(--border) !important;
+            border-radius: 0 !important;
+            color: var(--black) !important;
+            transition: border-color 0.25s, box-shadow 0.25s;
+        }
+
+            .card:hover {
+                border-color: var(--blue) !important;
+                box-shadow: 4px 4px 0 var(--blue) !important;
+            }
+
+        .card-header {
+            background: var(--blue) !important;
+            border-bottom: none !important;
+            color: var(--white) !important;
+            font-family: 'Barlow Condensed', sans-serif !important;
+            font-weight: 700 !important;
+            font-size: 0.72rem !important;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            padding: 0.6rem 1rem !important;
+        }
+
+        .card-body {
+            color: var(--black) !important;
+        }
+
+        /* ── BUTTONS ── */
+        .btn {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            border-radius: 0 !important;
+            transition: all 0.2s;
+        }
+
+        .btn-success {
+            background: var(--blue) !important;
+            border-color: var(--blue) !important;
+            color: var(--white) !important;
+        }
+
+            .btn-success:hover {
+                background: var(--blue-dk) !important;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(26,71,214,0.35);
+            }
+
+        .btn-primary {
+            background: var(--blue) !important;
+            border-color: var(--blue) !important;
+            color: var(--white) !important;
+        }
+
+            .btn-primary:hover {
+                background: var(--blue-dk) !important;
+                transform: translateY(-2px);
+            }
+
+        .btn-warning {
+            background: var(--black) !important;
+            border-color: var(--black) !important;
+            color: var(--white) !important;
+        }
+
+            .btn-warning:hover {
+                background: #333 !important;
+                transform: translateY(-2px);
+            }
+
+        .btn-danger {
+            background: #cc2222 !important;
+            border-color: #cc2222 !important;
+            color: var(--white) !important;
+        }
+
+        .btn-outline-secondary {
+            border-color: var(--border) !important;
+            color: var(--muted) !important;
+            background: transparent !important;
+        }
+
+            .btn-outline-secondary:hover {
+                background: var(--off) !important;
+                color: var(--black) !important;
+                border-color: var(--black) !important;
+            }
+
+        .btn-outline-danger {
+            border-color: #cc2222 !important;
+            color: #cc2222 !important;
+            background: transparent !important;
+        }
+
+            .btn-outline-danger:hover {
+                background: #cc2222 !important;
+                color: white !important;
+            }
+
+        .btn-outline-info {
+            border: 2px solid var(--blue) !important;
+            color: var(--blue) !important;
+            background: transparent !important;
+            font-size: 0.78rem;
+        }
+
+            .btn-outline-info:hover {
+                background: var(--blue) !important;
+                color: white !important;
+            }
+
+        .btn-outline-warning {
+            border: 2px solid var(--black) !important;
+            color: var(--black) !important;
+            background: transparent !important;
+            font-size: 0.78rem;
+        }
+
+            .btn-outline-warning:hover {
+                background: var(--black) !important;
+                color: white !important;
+            }
+
+        .btn-outline-dark {
+            border: 1px solid var(--border) !important;
+            color: var(--muted) !important;
+            background: transparent !important;
+            font-size: 0.75rem;
+        }
+
+            .btn-outline-dark:hover {
+                background: var(--off) !important;
+                color: var(--black) !important;
+            }
+
+        /* ── FORMS ── */
+        .form-control, .form-select {
+            background: var(--white) !important;
+            border: 1.5px solid var(--border) !important;
+            color: var(--black) !important;
+            border-radius: 0 !important;
+        }
+
+            .form-control:focus, .form-select:focus {
+                border-color: var(--blue) !important;
+                box-shadow: 0 0 0 3px rgba(26,71,214,0.12) !important;
+            }
+
+            .form-control::placeholder {
+                color: #aab0c2 !important;
+            }
+
+        .form-label {
+            color: var(--black);
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        .form-select option {
+            background: white;
+            color: var(--black);
+        }
+
+        /* ── ALERTS ── */
+        .alert-danger {
+            background: #fff0f0 !important;
+            border-color: #f0aaaa !important;
+            color: #aa2222 !important;
+            border-radius: 0 !important;
+        }
+
+        .alert-info {
+            background: #eef2ff !important;
+            border-color: var(--blue) !important;
+            color: var(--blue) !important;
+            border-radius: 0 !important;
+        }
+
+            .alert-info a {
+                color: var(--blue);
+            }
+
+        /* ── TEXT ── */
+        .text-muted {
+            color: var(--muted) !important;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--black);
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        a {
+            color: var(--blue);
+        }
+
+            a:hover {
+                color: var(--blue-dk);
+            }
+
+        /* ── FOOTER ── */
+        footer {
+            border-top: 4px solid var(--black) !important;
+            background: var(--white);
+            color: var(--muted);
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 0.78rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 1.25rem 0;
+            text-align: center;
+        }
+
+            footer a {
+                color: var(--blue);
+            }
+
+        /* ── UTILITY ── */
+        .blue-bar {
+            display: inline-block;
+            width: 5px;
+            background: var(--blue);
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+
+        .section-label {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 0.72rem;
+            color: var(--blue);
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+    </style>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1132.0" data-gr-ext-installed="">
+    <header b-c4o6vfio6s="">
+        <nav b-c4o6vfio6s="" class="navbar navbar-expand-sm navbar-dark mb-0">
+            <div b-c4o6vfio6s="" class="container">
+                <a class="navbar-brand" href="https://localhost:7267/">
+                    <span b-c4o6vfio6s="">XOLA</span> MGANGXELA
+                </a>
+                <button b-c4o6vfio6s="" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span b-c4o6vfio6s="" class="navbar-toggler-icon"></span>
+                </button>
+                <div b-c4o6vfio6s="" class="navbar-collapse collapse">
+                    <ul b-c4o6vfio6s="" class="navbar-nav ms-auto">
+                        <li b-c4o6vfio6s="" class="nav-item">
+                            <a class="nav-link" href="https://localhost:7267/">Home</a>
+                        </li>
+                        <li b-c4o6vfio6s="" class="nav-item">
+                            <a b-c4o6vfio6s="" class="nav-link" href="https://localhost:7267/#about">About</a>
+                        </li>
+                        <li b-c4o6vfio6s="" class="nav-item">
+                            <a b-c4o6vfio6s="" class="nav-link" href="https://localhost:7267/#projects">Projects</a>
+                        </li>
+                        <li b-c4o6vfio6s="" class="nav-item">
+                            <a b-c4o6vfio6s="" class="nav-link" href="https://localhost:7267/#education">Education</a>
+                        </li>
+                        <li b-c4o6vfio6s="" class="nav-item">
+                            <a b-c4o6vfio6s="" class="nav-link" href="mailto:mgangxelaxola1@gmail.com">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div b-c4o6vfio6s="" class="container main-content">
+        <main b-c4o6vfio6s="" role="main" class="pb-3">
+            
+
+<style>
+    /* ── HERO / HEADER ── */
+    .cv-hero {
+        background: var(--black);
+        padding: 3.5rem 2.5rem 2.5rem;
+        margin-bottom: 2.5rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .cv-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 6px;
+            height: 100%;
+            background: repeating-linear-gradient( to bottom, var(--blue) 0px, var(--blue) 36px, transparent 36px, transparent 48px );
+        }
+
+        .cv-hero h1 {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: clamp(2.8rem, 8vw, 5rem);
+            font-weight: 900;
+            color: var(--white);
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            line-height: 1;
+            margin-bottom: 0.4rem;
+        }
+
+            .cv-hero h1 span {
+                color: var(--blue);
+            }
+
+        .cv-hero .role-tag {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--blue);
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            margin-bottom: 1.5rem;
+        }
+
+    .contact-pills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+        .contact-pills a,
+        .contact-pills span {
+            background: rgba(255,255,255,0.07);
+            border: 1px solid rgba(255,255,255,0.18);
+            color: rgba(255,255,255,0.82);
+            padding: 0.3rem 0.9rem;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+            .contact-pills a:hover {
+                background: var(--blue);
+                border-color: var(--blue);
+                color: white;
+            }
+
+    /* ── SECTION CARDS ── */
+    .cv-section {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-top: 4px solid var(--blue);
+        margin-bottom: 1.75rem;
+        transition: box-shadow 0.25s;
+    }
+
+        .cv-section:hover {
+            box-shadow: 5px 5px 0 var(--blue);
+        }
+
+    .cv-section-header {
+        background: var(--blue);
+        color: var(--white);
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 700;
+        font-size: 0.75rem;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        padding: 0.6rem 1.2rem;
+    }
+
+    .cv-section-body {
+        padding: 1.4rem;
+    }
+
+    /* ── ABOUT ── */
+    .about-text {
+        font-size: 0.95rem;
+        line-height: 1.8;
+        color: #333;
+    }
+
+    /* ── EDUCATION ── */
+    .edu-entry {
+        padding: 0.75rem 0;
+        border-bottom: 1px solid var(--border);
+    }
+
+        .edu-entry:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+    .edu-degree {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 800;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: var(--black);
+    }
+
+    .edu-institution {
+        color: var(--blue);
+        font-size: 0.88rem;
+        font-weight: 600;
+        margin-top: 0.15rem;
+    }
+
+    .edu-meta {
+        color: var(--muted);
+        font-size: 0.78rem;
+        margin-top: 0.15rem;
+    }
+
+    .edu-status {
+        display: inline-block;
+        background: var(--blue);
+        color: white;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 0.68rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        padding: 0.1rem 0.5rem;
+        margin-left: 0.5rem;
+        vertical-align: middle;
+    }
+
+        .edu-status.completed {
+            background: #1a8c4e;
+        }
+
+    /* ── SKILLS ── */
+    .skills-group {
+        margin-bottom: 1rem;
+    }
+
+        .skills-group:last-child {
+            margin-bottom: 0;
+        }
+
+    .skills-group-label {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 0.7rem;
+        font-weight: 700;
+        color: var(--muted);
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+    }
+
+    .skill-chip {
+        display: inline-block;
+        border: 1.5px solid var(--blue);
+        color: var(--blue);
+        background: transparent;
+        padding: 0.28rem 0.8rem;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        margin: 0.2rem;
+        transition: all 0.18s;
+    }
+
+        .skill-chip:hover {
+            background: var(--blue);
+            color: white;
+        }
+
+    /* ── PROJECTS ── */
+    .project-card {
+        border-left: 4px solid var(--blue);
+        padding: 1rem 1.1rem;
+        background: var(--off);
+        margin-bottom: 1rem;
+        transition: background 0.2s;
+    }
+
+        .project-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-card:hover {
+            background: #eef2ff;
+        }
+
+    .project-name {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 800;
+        font-size: 1.05rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: var(--black);
+        margin-bottom: 0.4rem;
+    }
+
+    .project-desc {
+        color: var(--muted);
+        font-size: 0.88rem;
+        line-height: 1.65;
+        margin-bottom: 0.6rem;
+    }
+
+    .tech-badge {
+        display: inline-block;
+        background: var(--blue);
+        color: white;
+        padding: 0.14rem 0.55rem;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        margin: 0.15rem;
+    }
+
+    /* ── INTERESTS ── */
+    .interests-text {
+        font-size: 0.92rem;
+        color: #444;
+        line-height: 1.75;
+    }
+
+    /* ── ANIMATIONS ── */
+    .fade-in {
+        opacity: 0;
+        transform: translateY(18px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+</style>
+
+<!-- ── HERO HEADER ── -->
+<div class="cv-hero fade-in visible">
+    <div class="role-tag">● Computer Scientist &nbsp;•&nbsp; Application Developer</div>
+    <h1>Xola <span>Mgangxela</span></h1>
+    <div class="contact-pills">
+            <a href="mailto:mgangxelaxola1@gmail.com">✉ mgangxelaxola1@gmail.com</a>
+            <span>📞 082 050 7787</span>
+            <span>📍 Johannesburg, Gauteng</span>
+            <a href="https://github.com/MgangxelaXola-ST10439697" target="_blank">💻 GitHub</a>
+            <a href="https://www.linkedin.com/in/y-mgangxela-4544ab327/" target="_blank">🔗 LinkedIn</a>
+    </div>
+</div>
+
+<div class="row g-4">
+
+    <!-- ── LEFT COLUMN ── -->
+    <div class="col-lg-8">
+
+        <!-- About -->
+            <div class="cv-section fade-in visible">
+                <div class="cv-section-header">👤 &nbsp;About Me</div>
+                <div class="cv-section-body">
+                    <p class="about-text">I am a dedicated final year IT student, with a strong passion for solving complex problems through technology. Through my academic projects, assignments, and in class exercises, I have built a solid foundation in software development, data structures, and algorithmic thinking. I enjoy turning ideas into practical, efficient solutions and continuously refining my code for performance and readability. My goal is to develop into a well rounded IT professional who delivers reliable, scalable, and impactful solutions.</p>
+                </div>
+            </div>
+
+        <!-- Projects -->
+            <div class="cv-section fade-in visible">
+                <div class="cv-section-header">💻 &nbsp;Projects</div>
+                <div class="cv-section-body">
+                        <div class="project-card">
+                            <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+                                <div class="project-name">Online CV Portfolio (This App)</div>
+                                <div class="d-flex gap-2">
+                                        <a href="https://github.com/MgangxelaXola-ST10439697/ICE-Task-1-CV-Application.git" target="_blank" class="btn btn-outline-dark btn-sm">💻 GitHub</a>
+                                   
+                                </div>
+                            </div>
+                                <p class="project-desc">An ASP.NET MVC web application that displays my professional CV as a live, hosted portfolio. Built using the MVC design pattern with Entity Framework Core and SQLite for data persistence.</p>
+                                <div>
+                                        <span class="tech-badge">C#</span>
+                                        <span class="tech-badge">ASP.NET MVC</span>
+                                        <span class="tech-badge">Entity Framework Core</span>
+                                        <span class="tech-badge">SQLite</span>
+                                        <span class="tech-badge">Bootstrap 5</span>
+                                </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+                                <div class="project-name">ContractMonthlyClaimSystem</div>
+                                <div class="d-flex gap-2">
+                                        <a href="https://github.com/MgangxelaXola-ST10439697/POE-Part3_PROG6212.git" target="_blank" class="btn btn-outline-dark btn-sm">💻 GitHub</a>
+                                   
+                                </div>
+                            </div>
+                                <p class="project-desc">A contract management and monthly claims processing system that allows users to submit, track, and manage contractor claims efficiently.The system validates input data, calculates claim totals, and stores records for administrative review.
+</p>
+                                <div>
+                                        <span class="tech-badge">ASP.NET</span>
+                                        <span class="tech-badge">SQL Server</span>
+                                        <span class="tech-badge">C#</span>
+                                </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+                                <div class="project-name">ABCRetailAPP</div>
+                                <div class="d-flex gap-2">
+                                        <a href="https://github.com/MgangxelaXola-ST10439697/POE-Part3_PROG6212.git" target="_blank" class="btn btn-outline-dark btn-sm">💻 GitHub</a>
+                                   
+                                </div>
+                            </div>
+                                <p class="project-desc">A retail management application designed to manage products, customers, and orders. The system supports CRUD operations, inventory tracking, and structured data storage to simulate a real-world retail environment.</p>
+                                <div>
+                                        <span class="tech-badge">.NET</span>
+                                        <span class="tech-badge">SQL Server</span>
+                                        <span class="tech-badge">Azure Storage</span>
+                                        <span class="tech-badge">Entity Framework</span>
+                                        <span class="tech-badge">C#</span>
+                                </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+                                <div class="project-name">OOP Fundamentals Project</div>
+                                <div class="d-flex gap-2">
+                                        <a href="https://github.com/mgangxelaxola1-XYM/Week1-OOP-Exercise.git" target="_blank" class="btn btn-outline-dark btn-sm">💻 GitHub</a>
+                                   
+                                </div>
+                            </div>
+                                <p class="project-desc">A foundational object-oriented programming project demonstrating core OOP principles including encapsulation, inheritance, polymorphism, and abstraction through practical class-based implementations.</p>
+                                <div>
+                                        <span class="tech-badge">.NET</span>
+                                        <span class="tech-badge">C#</span>
+                                </div>
+                        </div>
+                </div>
+            </div>
+
+        <!-- Education -->
+            <div class="cv-section fade-in visible">
+                <div class="cv-section-header">🏫 &nbsp;Education</div>
+                <div class="cv-section-body">
+                        <div class="edu-entry">
+                            <div class="edu-degree">
+                                Bachelor of Computer and Information Sciences in Application Development
+                                    <span class="edu-status ">Current</span>
+                            </div>
+                            <div class="edu-institution">IIE Emeris Ruimsig (The Independent Institute of Education)</div>
+                                <div class="edu-meta">
+                                    2024 – Present
+                                </div>
+                        </div>
+                        <div class="edu-entry">
+                            <div class="edu-degree">
+                                National Senior Certificate (Matric)
+                                    <span class="edu-status completed">Completed</span>
+                            </div>
+                            <div class="edu-institution">The King's School West Rand</div>
+                                <div class="edu-meta">
+                                    2022 – 2023
+                                </div>
+                        </div>
+                        <div class="edu-entry">
+                            <div class="edu-degree">
+                                Grade 8 – 10
+                                    <span class="edu-status completed">Completed</span>
+                            </div>
+                            <div class="edu-institution">Hoërskool Roodepoort</div>
+                                <div class="edu-meta">
+                                    2019 – 2021
+                                </div>
+                        </div>
+                </div>
+            </div>
+
+    </div>
+
+    <!-- ── RIGHT COLUMN ── -->
+    <div class="col-lg-4">
+
+        <!-- Skills -->
+            <div class="cv-section fade-in visible">
+                <div class="cv-section-header">🛠 &nbsp;Skills</div>
+                <div class="cv-section-body">
+                        <div class="skills-group">
+                            <div class="skills-group-label">Technical</div>
+                                <span class="skill-chip">Programming</span>
+                                <span class="skill-chip">Data Structures &amp; Algorithms</span>
+                                <span class="skill-chip">Version Control (Git)</span>
+                                <span class="skill-chip">Software Development Principles</span>
+                                <span class="skill-chip">Debugging &amp; Code Optimization</span>
+                        </div>
+                        <div class="skills-group">
+                            <div class="skills-group-label">Soft Skills</div>
+                                <span class="skill-chip">Problem Solving &amp; Analytical Thinking</span>
+                                <span class="skill-chip">Team Collaboration &amp; Communication</span>
+                        </div>
+                </div>
+            </div>
+
+        <!-- Interests -->
+            <div class="cv-section fade-in visible">
+                <div class="cv-section-header">🎯 &nbsp;Interests</div>
+                <div class="cv-section-body">
+                    <p class="interests-text">Drawing — enhances my design thinking and visual problem-solving skills. Squash enthusiast who has competed in school-level games.</p>
+                </div>
+            </div>
+
+        <!-- Contact Card -->
+        <div class="cv-section fade-in visible">
+            <div class="cv-section-header">📞 &nbsp;Contact</div>
+            <div class="cv-section-body">
+                <p style="font-size:0.88rem; color:var(--muted); margin-bottom:0.75rem;">
+                    Interested in working together or have an opportunity to share?
+                </p>
+                <a href="mailto:mgangxelaxola1@gmail.com" class="btn btn-success w-100">
+                    ✉ &nbsp;Send Me an Email
+                </a>
+                <a href="https://localhost:7267/files/YourNameCV.pdf" class="btn btn-dark" download="">
+                    Download My CV (PDF)
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+        </main>
+    </div>
+
+    <footer b-c4o6vfio6s="">
+        © 2025 — Xola Mgangxela — Application Developer
+    </footer>
+
+    <script src="./Xola Mgangxela - Portfolio - CV Portfolio_files/jquery.min.js.download"></script>
+    <script src="./Xola Mgangxela - Portfolio - CV Portfolio_files/bootstrap.bundle.min.js.download"></script>
+    <script src="./Xola Mgangxela - Portfolio - CV Portfolio_files/site.js.download"></script>
+    
+    <script>
+        document.querySelectorAll('.fade-in').forEach((el, i) => {
+            setTimeout(() => el.classList.add('visible'), i * 100);
+        });
+    </script>
+
+
+<!-- Visual Studio Browser Link -->
+<script type="text/javascript" src="./Xola Mgangxela - Portfolio - CV Portfolio_files/browserLink" async="async" id="__browserLink_initializationData" data-requestid="38fb91454dd64c598bd86947d7adb976" data-requestmappingfromserver="false" data-connecturl="http://localhost:61226/27462644eff341f4a9220ac105e0f592/browserLink"></script>
+<!-- End Browser Link -->
+<script src="./Xola Mgangxela - Portfolio - CV Portfolio_files/aspnetcore-browser-refresh.js.download"></script>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
